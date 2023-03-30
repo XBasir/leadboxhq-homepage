@@ -45,12 +45,28 @@
   .post-title{
     font-size: 24px !important;
   }
+
+  .post-decoration{
+    width: 100%; 
+    height: 17px; 
+    margin-top: -45px;
+  }
 }
 
 .featured-text{
   color: #333333;
   font-size: 36px;
   padding-bottom: 30px;
+}
+
+.featured-title-img{
+  height: 60px;
+   width: 100%;
+}
+
+.featured-status-img{
+  height: 50px;
+  width: 100%;
 }
 
 .featured-box{
