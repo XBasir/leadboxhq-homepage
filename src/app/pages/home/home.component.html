@@ -23,7 +23,7 @@
 
 <div class="container-fluid featured-box mt-3">
   <div class="container featured-container" *ngIf="featuredSlides">
-    <h2 class="text-center featured-text">FEATURED VEHICLES</h2>
+    <h2 class="text-center featured-text px-5">FEATURED VEHICLES</h2>
     <p-carousel   [value]="featuredSlides" [numVisible]="3" [numScroll]="3" [responsiveOptions]="featuredResponsive">
       <ng-template let-slides pTemplate="item">
           <div class="slider-item">
