@@ -9,7 +9,10 @@ Run the following command to install Angular: `npm install -g @angular/cli`
 
 ## Development server
 
+First run `npm install` at the root path of the project in order to install all the project dependencies.
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
