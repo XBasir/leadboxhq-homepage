@@ -1,0 +1,144 @@
+<app-header></app-header>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="main-slider-1 d-block w-100" src="assets/images/main-slide-car.webp" alt="main-slide1">
+      <img class="main-slider-mobile w-100" src="assets/images/main-slider-mobile.webp"  alt="main-slide1">
+    </div>
+    <div class="carousel-item">
+      <img class="main-slider-1 d-block w-100" src="assets/images/main-slide-car.webp" alt="main-slide2">
+      <img class="main-slider-mobile w-100" src="assets/images/main-slider-mobile.webp" alt="main-slide2">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span aria-hidden="true"><img src="assets/images/left-arrow.png" alt="left-arrow-main" height="32" width="21"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"><img src="assets/images/right-arrow.png" alt="right-arrow-main" height="32" width="21"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container-fluid featured-box mt-3">
+  <div class="container featured-container" *ngIf="featuredSlides">
+    <h2 class="text-center featured-text">FEATURED VEHICLES</h2>
+    <p-carousel   [value]="featuredSlides" [numVisible]="3" [numScroll]="3" [responsiveOptions]="featuredResponsive">
+      <ng-template let-slides pTemplate="item">
+          <div class="slider-item">
+              <div class="slider-item-content">
+                  <div>
+                    <img class="slide-image" height="400" width="400" src="{{slides.image}}">
+                    <div class="featured-title text-center">
+                      <img class="" style="height: 60px; width: 100%;" src="assets/images/featured-bg.png">
+                      <div class="spec-featured-title">
+                        {{slides.featuredTitle}}
+                      </div>
+                    </div>
+                    <div class="featured-status">
+                      <img class="" style="height: 50px; width: 100%;" src="assets/images/featured-status-bg.png">
+                      <div class="spec-featured-status">
+                        {{slides.status}}
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</div>
+
+<div class="container-fluid post-box mt-4 px-5 mb-3">
+  <div class="row mb-md-2">
+    <div class="col-md-6 col-lg-4 pb-2">
+      <div class="slider-item-content">
+          <div>
+              <img class="slide-image" src="assets/images/post-slide-car1.webp">
+              <img style="width: 100%; height: 17px; margin-top: -45px;" src="assets/images/post-bottom.png">
+          </div>
+          <div class="post-content">
+            <a class="post-title" href="#"><h3 class="post-title">Proin in lorem tortor</h3></a>
+            <h6 class="post-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta est a est rutrum ultricies.
+              Etiam placerat id dui eget vestibulum. Praesent aliquam magna nunc, sit amet facilisis ante
+              elementum quis. Curabitur tincidunt neque libero, at pretium nulla mattis ac. Morbi auctor lacus
+              lectus, eget facilisis urna commodo sit amet.</h6>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4  pb-2">
+      <div class="slider-item-content">
+          <div>
+              <img class="slide-image" src="assets/images/post-slide-car2.webp">
+              <img style="width: 100%; height: 17px; margin-top: -45px;" src="assets/images/post-bottom.png">
+          </div>
+          <div class="post-content">
+            <a class="post-title" href="#"><h3 class="post-title">Proin in lorem tortor</h3></a>
+            <h6 class="post-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta est a est rutrum ultricies.
+              Etiam placerat id dui eget vestibulum. Praesent aliquam magna nunc, sit amet facilisis ante
+              elementum quis. Curabitur tincidunt neque libero, at pretium nulla mattis ac. Morbi auctor lacus
+              lectus, eget facilisis urna commodo sit amet.</h6>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 last-post">
+      <div class="slider-item-content">
+          <div>
+              <img class="slide-image" src="assets/images/post-slide-car3.webp">
+              <img style="width: 100%; height: 17px; margin-top: -45px;" src="assets/images/post-bottom.png">
+          </div>
+          <div class="post-content">
+            <a class="post-title" href="#"><h3 class="post-title">Proin in lorem tortor</h3></a>
+            <h6 class="post-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta est a est rutrum ultricies.
+              Etiam placerat id dui eget vestibulum. Praesent aliquam magna nunc, sit amet facilisis ante
+              elementum quis. Curabitur tincidunt neque libero, at pretium nulla mattis ac. Morbi auctor lacus
+              lectus, eget facilisis urna commodo sit amet.</h6>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid about-box px-5">
+  <div class="row about-main">
+    <div class="col-md-4 col-lg-4" style="position: relative;">
+      <img class="about-client" src="assets/images/about-client.png">
+    </div>
+    <div class="col-md-8 col-lg-8 about-text pl-5 pr-2 pb-2 pb-lg-5">
+      <h3 class="text-center pt-4 pt-lg-5 mb-3 about-title">ABOUT US</h3>
+      <p class="pb-3 about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel quam nec metus pellentesque iaculis.
+        Cras lobortis odio a nulla condimentum blandit. Donec laoreet euismod diam, in lobortis odio tincidunt in. <br><br>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus eleifend,
+        metus ut rutrum dignissim, erat diam pulvinar urna, laoreet convallis odio lorem at elit. Morbi iaculis metus
+        et vestibulum commodo. Etiam lectus augue, congue vitae vestibulum sit amet, mattis finibus nulla. Duis dictum
+        condimentum viverra. Curabitur cursus, nisi sit amet maximus imperdiet, odio augue tincidunt neque, nec condimentum
+        lectus enim at est. Praesent accumsan sed quam id rutrum. Quisque quis turpis eget ex euismod fermentum.
+        Fusce id nisi lacus. Vestibulum et aliquet purus.</p>
+      <p class="pb-1 about-desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel quam nec metus pellentesque iaculis.
+        Cras lobortis odio a nulla condimentum blandit. Donec laoreet euismod diam, in lobortis odio tincidunt in.   <br><br>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus eleifend, metus ut rutrum dignissim,
+        erat diam pulvinar urna, laoreet convallis odio lorem at elit. Morbi iaculis metus et vestibulum commodo...</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid about-box-mobile">
+  <div class="row">
+    <div class="col-md-12 mt-5 about-text text-white px-5">
+      <h3 class="text-center pt-4 pt-lg-5 mb-3 about-title">ABOUT US</h3>
+      <p class="pb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel quam nec metus pellentesque iaculis.
+        Cras lobortis odio a nulla condimentum blandit. Donec laoreet euismod diam, in lobortis odio tincidunt in. <br><br>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus eleifend, metus ut rutrum dignissim,
+        erat diam pulvinar urna, laoreet convallis odio lorem at elit. Morbi iaculis metus et vestibulum commodo. Duis dictum condimentum viverra.
+        Curabitur cursus,</p>
+    </div>
+  </div>
+  <div class="row about-text">
+    <div class="text-center">
+      <img class="about-client-mobile" src="assets/images/about-client-mobile.png">
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,55 @@
+.footer-box{
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.footer-box-mobile{
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 14px;
+  display: none;
+  overflow: hidden;
+}
+
+@media (max-width: 769px) {
+  .footer-box{
+    display: none !important;
+  }
+
+  .footer-box-mobile{
+    display: block !important;
+  }
+}
+
+.social{
+  display: inline-block;
+}
+
+.contact-info{
+  font-size: 14px;
+}
+
+.social-icon{
+  padding: 0px 2px;
+}
+
+.terms-info{
+  font-size: 12px;
+}
+
+.main-schedule{
+  font-weight: 600;
+}
+
+.select-footer{
+  width: 90%;
+}
+
+.select-footer-mobile{
+  width: 100%;
+}
+
+.schedule-info{
+  font-size: 12px;
+}
